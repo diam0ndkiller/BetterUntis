@@ -24,7 +24,9 @@
     <string name="all_lesson_exam">%1$s (eksamen!)</string>
     <string name="all_dialog_datepicker_button_today">I dag</string>
     <string name="all_dialog_error_title">Informasjon om feil</string>
-    <string name="all_dialog_error_message">Etterspørsel-ID: %1$d\nFeilkode: %2$d\nFeilmelding: %3$s</string>
+    <string name="all_dialog_error_message">Etterspørsel-ID: %1$d
+\nFeilkode: %2$d
+\nFeilmelding: %3$s</string>
     <string name="activity_title_free_rooms">Ledige rom</string>
     <string name="activity_title_info_center">Infosenter</string>
     <string name="activity_title_settings">Innstillinger</string>
@@ -218,7 +220,7 @@
     <string name="notifications_text_message_rooms">Rom: %1$s</string>
     <string name="notifications_text_message_teachers">Lærer: %1$s</string>
     <string name="notifications_text_message_classes">Klasse: %1$s</string>
-    <string name="notifications_text_message_separator"> / </string>
+    <string name="notifications_text_message_separator">"/ "</string>
     <string name="homeworks_due_time">til %1$s</string>
     <string name="homeworks_due_time_format">EEE, dd. MMM</string>
     <plurals name="main_time_diff_minutes">
@@ -390,4 +392,8 @@
     <string name="infocenter_absences_filter_only_unexcused"></string>
     <string name="main_dialog_reports_title"></string>
     <string name="settings_recommend_title"></string>
+    <string name="all_contact_email" translatable="false"></string>
+    <string name="errors_button_report"></string>
+    <string name="errors_button_dismiss"></string>
+    <string name="app_name" translatable="false"></string>
 </resources>
