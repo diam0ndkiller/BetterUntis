@@ -277,6 +277,7 @@
     <string name="logindatainput_skip_app_secret">Passer la résolution du secret de l\'appli</string>
     <plurals name="preferences_contributors_contributions">
         <item quantity="one">%1$d contribution</item>
+        <item quantity="many"></item>
         <item quantity="other">%1$d contributions</item>
     </plurals>
     <string name="widget_timetable_link">Lien calendrier</string>
