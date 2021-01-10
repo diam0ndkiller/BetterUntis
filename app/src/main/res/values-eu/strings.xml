@@ -18,7 +18,7 @@
     <string name="roomfinder_image_previous_hour">aurreko ordua</string>
     <string name="roomfinder_image_next_hour">hurrengo ordua</string>
     <string name="roomfinder_dialog_itemdelete_title">Ezabatu %1$s</string>
-    <string name="roomfinder_dialog_itemdelete_text">Ziur zaude gela hau zerrendatik kendu nahi duzula\?</string>
+    <string name="roomfinder_dialog_itemdelete_text">Ziur zaude gela hau zerrendatik kendu nahi duzula?</string>
     <string name="roomfinder_delete_item">Ezabatu elementua</string>
     <string name="roomfinder_current_hour_time">%1$s - %2$s</string>
     <string name="roomfinder_current_hour">%1$s,%2$d. Eskola</string>
@@ -59,8 +59,8 @@
     <string name="main_dialog_update_profile_button">Eguneratu profila</string>
     <string name="main_dialog_update_profile_message">Aplikazioaren azken eguneratzeak erabiltzaileen datuak gordetzeko modua aldatu du. Eguneratu uneko profila aplikazioa erabiltzen jarraitzeko.</string>
     <string name="main_dialog_update_profile_title">Profila eguneratzea beharrezkoa da</string>
-    <string name="main_dialog_delete_profile_message">Ziur zaude %2$s eskolako %1$s erabiltzailea duen profila ezabatu nahi duzula\?</string>
-    <string name="main_dialog_delete_profile_title">Profila ezabatu nahi duzu\?</string>
+    <string name="main_dialog_delete_profile_message">Ziur zaude %2$s eskolako %1$s erabiltzailea duen profila ezabatu nahi duzula?</string>
+    <string name="main_dialog_delete_profile_title">Profila ezabatu nahi duzu?</string>
     <string name="mainactivitydrawer_profile_delete_hint">Ukitu luze profil bat editatzeko</string>
     <string name="mainactivitydrawer_profile_add">Gehitu profila</string>
     <string name="mainactivitydrawer_dropdown_show">Erakutsi profil-zerrenda</string>
@@ -204,7 +204,7 @@
     <string name="preference_info_contributors">Kolaboratzaileak</string>
     <string name="preference_info_app_version_desc">%1$s (%2$d)</string>
     <string name="preference_info_app_version">Aplikazioaren bertsioa</string>
-    <string name="preference_dialog_colors_reset_title">Berrezarri koloreak\?</string>
+    <string name="preference_dialog_colors_reset_title">Berrezarri koloreak?</string>
     <string name="preference_dialog_colors_reset_text">Honek goiko kolore guztiak lehenetsitako balioetara berrezarriko ditu.</string>
     <string name="preference_category_general_week_display">Astea bistaratzeko ezarpenak</string>
     <string name="preference_category_general_automute">Automatikoki mututzea</string>
@@ -289,4 +289,8 @@
     <string name="preference_timetable_background_irregular">Hartu kontuan elementuaren hondoa</string>
     <string name="preference_timetable_background_irregular_desc">Erabili hau irakasleenganako sarbiderik ez baduzu</string>
     <string name="preference_flinging_enable">Gaitu lerratze arina</string>
+    <string name="all_contact_email" translatable="false"></string>
+    <string name="preference_dark_theme_auto"></string>
+    <string name="errors_button_report"></string>
+    <string name="errors_button_dismiss"></string>
 </resources>
