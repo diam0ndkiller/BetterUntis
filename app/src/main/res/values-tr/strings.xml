@@ -71,7 +71,7 @@
     <string name="roomfinder_image_next_hour">gelecek saat</string>
     <string name="roomfinder_image_availability_indicator">Oda müsaitlik göstergesi</string>
     <string name="roomfinder_dialog_itemdelete_title">%1$s\'i Sil</string>
-    <string name="roomfinder_dialog_itemdelete_text">Bu odayı listeden çıkarmak istediğinizden emin misiniz\?</string>
+    <string name="roomfinder_dialog_itemdelete_text">Bu odayı listeden çıkarmak istediğinizden emin misiniz?</string>
     <string name="roomfinder_delete_item">Öğeyi sil</string>
     <string name="roomfinder_current_hour_time">%1$s - %2$s</string>
     <string name="roomfinder_current_hour">%1$s,%2$d. Ders</string>
@@ -126,8 +126,8 @@
     <string name="main_dialog_update_profile_button">Profili güncelle</string>
     <string name="main_dialog_update_profile_message">Yakın zamandaki bir güncelleme ile kullanıcı verilerini saklama şekli değişikliğe uğradı. Uygulamayı kullanmaya devam edebilmek için lütfen profilinizi güncelleyiniz.</string>
     <string name="main_dialog_update_profile_title">Profil güncellemesi gerekli</string>
-    <string name="main_dialog_delete_profile_message">%2$s okulundan %1$s kullanıcı profilini silmek istediğinize emin misiniz\?</string>
-    <string name="main_dialog_delete_profile_title">Profil silinsin mi\?</string>
+    <string name="main_dialog_delete_profile_message">%2$s okulundan %1$s kullanıcı profilini silmek istediğinize emin misiniz?</string>
+    <string name="main_dialog_delete_profile_title">Profil silinsin mi?</string>
     <string name="mainactivitydrawer_profile_delete_hint">Profili düzenlemek için basılı tut</string>
     <string name="mainactivitydrawer_profile_add">Profil ekle</string>
     <string name="mainactivitydrawer_dropdown_show">Profil listesini göster</string>
@@ -196,7 +196,7 @@
     <string name="preference_info_app_version">Uygulama versiyonu</string>
     <string name="preference_double_tap_to_exit">Çıkmak için geri butonuna iki kere bas</string>
     <string name="preference_dialog_colors_reset_text">Bu işlem yukarıdaki renkleri varsayılan ayarlara sıfırlayacaktır.</string>
-    <string name="preference_dialog_colors_reset_title">Renkleri sıfırla\?</string>
+    <string name="preference_dialog_colors_reset_title">Renkleri sıfırla?</string>
     <string name="preference_dark_theme_on">Her zaman açık</string>
     <string name="preference_dark_theme_oled_desc">OLED ekranlar için kullanışlı</string>
     <string name="preference_dark_theme_oled">Siyah arka plan kullan</string>
@@ -276,4 +276,5 @@
         <item quantity="one">Bir dakika önce</item>
         <item quantity="other">%d dakika önce</item>
     </plurals>
+    <string name="preference_dark_theme_auto"></string>
 </resources>
