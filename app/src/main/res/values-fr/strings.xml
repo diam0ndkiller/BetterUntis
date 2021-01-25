@@ -221,7 +221,7 @@
     <string name="main_dialog_update_profile_button">Mettre à jour le profil</string>
     <string name="main_dialog_update_profile_message">Une récente mise à jour de l’appli a changé la manière dont les données utilisateur sont enregistrées. Veuillez mettre à jour votre profil actuel pour continuer à utiliser l’appli.</string>
     <string name="main_dialog_update_profile_title">Mise à jour du profil nécessaire</string>
-    <string name="main_dialog_delete_profile_message">Êtes-vous sûr·e de vouloir supprimer votre profil avec l’utilisateur %1$s de l’école %2$s \?</string>
+    <string name="main_dialog_delete_profile_message">Êtes-vous sûr·e de vouloir supprimer votre profil avec l’utilisateur %1$s de l’école %2$s ?</string>
     <string name="main_dialog_delete_profile_title">Supprimer le profil ?</string>
     <string name="mainactivitydrawer_profile_delete_hint">Restez appuyé sur un profil pour le modifier</string>
     <string name="mainactivitydrawer_profile_add">Ajouter un profil</string>
