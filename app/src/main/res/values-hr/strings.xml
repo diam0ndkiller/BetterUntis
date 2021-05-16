@@ -128,7 +128,7 @@
     <string name="preference_info_app_version">Verzija programa</string>
     <string name="preference_flinging_enable">Aktiviraj brzo kretanje</string>
     <string name="preference_double_tap_to_exit">Za zatvaranje programa dodirni dvaput</string>
-    <string name="preference_dialog_colors_reset_title">Obnoviti boje\?</string>
+    <string name="preference_dialog_colors_reset_title">Obnoviti boje?</string>
     <string name="preference_dialog_colors_reset_text">Ovo će vratiti sve gornje boje na standardne vrijednosti.</string>
     <string name="preference_dark_theme_on">Uvijek uključeno</string>
     <string name="preference_dark_theme_oled_desc">Korisno za OLED-ekrane</string>
@@ -162,7 +162,7 @@
     <string name="roomfinder_image_next_hour">sljedeći sat</string>
     <string name="roomfinder_image_availability_indicator">Indikator slobodne prostorije</string>
     <string name="roomfinder_dialog_itemdelete_title">Izbriši %1$s</string>
-    <string name="roomfinder_dialog_itemdelete_text">Stvarno želiš ukloniti ovu prostoriju iz popisa\?</string>
+    <string name="roomfinder_dialog_itemdelete_text">Stvarno želiš ukloniti ovu prostoriju iz popisa?</string>
     <string name="roomfinder_delete_item">Izbriši prostoriju</string>
     <string name="roomfinder_current_hour_time">%1$s – %2$s</string>
     <string name="roomfinder_current_hour">%1$s, %2$d. Nastava</string>
@@ -220,8 +220,8 @@
     <string name="main_dialog_update_profile_button">Aktualiziraj profil</string>
     <string name="main_dialog_update_profile_message">Nedavno aktualiziranje programa promijenilo je način spremanja korisničkih podataka. Za daljnje korištenje programa aktualiziraj tvoj trenutačni profil.</string>
     <string name="main_dialog_update_profile_title">Potrebno je aktualizirati profil</string>
-    <string name="main_dialog_delete_profile_message">Stvarno želiš izbrisati tvoj profil s korisnikom %1$s u školi %2$s\?</string>
-    <string name="main_dialog_delete_profile_title">Izbrisati profil\?</string>
+    <string name="main_dialog_delete_profile_message">Stvarno želiš izbrisati tvoj profil s korisnikom %1$s u školi %2$s?</string>
+    <string name="main_dialog_delete_profile_title">Izbrisati profil?</string>
     <string name="mainactivitydrawer_profile_delete_hint">Dodirni dugo za uređivanje profila</string>
     <string name="mainactivitydrawer_profile_add">Dodaj profil</string>
     <string name="mainactivitydrawer_dropdown_show">Pokaži popis profila</string>
@@ -343,7 +343,7 @@
     <string name="logindatainput_error_invalid_format">Nevažeći format!</string>
     <string name="logindatainput_key_saved">Ključ ili lozinka (spremljeno)</string>
     <string name="logindatainput_profilename">Ime profila (opcionalno)</string>
-    <string name="main_dialog_delete_bookmark">Želiš li izbrisati ovu zabilješku\?</string>
+    <string name="main_dialog_delete_bookmark">Želiš li izbrisati ovu zabilješku?</string>
     <string name="preference_automute_minimum_break_length">Najkraća pauza</string>
     <string name="preference_automute_minimum_break_length_summary">Nemoj uključivati zvuk uređaja tijekom pauza kraćih od navedene duljine (u minutama)</string>
     <string name="preference_category_display_options">Opcije prikaza</string>
@@ -377,4 +377,5 @@
     <string name="all_personal_abbr">Osobno</string>
     <string name="preference_category_app_language">Jezik aplikacije</string>
     <string name="preference_app_language">Jezik aplikacije</string>
+    <string name="all_contact_email" translatable="false"></string>
 </resources>
