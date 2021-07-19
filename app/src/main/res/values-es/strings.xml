@@ -399,4 +399,5 @@
     <string name="main_dialog_reports_title"></string>
     <string name="settings_recommend_title"></string>
     <string name="preference_background_irregular_past"></string>
+    <string name="all_contact_email" translatable="false"></string>
 </resources>
