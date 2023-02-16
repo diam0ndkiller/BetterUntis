@@ -400,4 +400,5 @@
     <string name="settings_recommend_title"></string>
     <string name="preference_background_irregular_past"></string>
     <string name="all_contact_email" translatable="false"></string>
+    <string name="logindatainput_aquiring_app_secret"></string>
 </resources>
