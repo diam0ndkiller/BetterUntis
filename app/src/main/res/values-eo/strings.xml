@@ -392,4 +392,5 @@
     <string name="infocenter_absences_filter"></string>
     <string name="logindatainput_aquiring_app_secret"></string>
     <string name="all_absences"></string>
+    <string name="homeworks_due_time"></string>
 </resources>
