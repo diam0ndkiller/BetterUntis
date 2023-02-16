@@ -403,4 +403,5 @@
     <string name="logindatainput_skip_school_id"></string>
     <string name="infocenter_absences_filter"></string>
     <string name="widget_select_profile"></string>
+    <string name="logindatainput_aquiring_app_secret"></string>
 </resources>
