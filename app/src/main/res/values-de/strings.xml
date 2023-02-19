@@ -40,7 +40,8 @@
     <string name="activity_title_info_center">Info-Center</string>
     <string name="activity_title_messenger">Messenger</string>
     <string name="activity_title_settings">Einstellungen</string>
-    <string name="errors_github_attach_file_message">Bitte füge die komprimierten Log-Dateien als Anhang hinzu.\nDiese wurden hier gespeichert: `%1$s`</string>
+    <string name="errors_github_attach_file_message">Bitte füge die komprimierten Log-Dateien als Anhang hinzu.
+\nDiese wurden hier gespeichert: `%1$s`</string>
     <string name="nav_all_timetables">Stundenpläne</string>
     <string name="menu_infocenter_messagesofday">Messages</string>
     <string name="menu_infocenter_officehours">Sprechstunden</string>
@@ -50,7 +51,7 @@
     <string name="mainactivitydrawer_profile_add">Ein Profil hinzufügen</string>
     <string name="mainactivitydrawer_profile_delete_hint">Lange auf ein Profil tippen, um zu bearbeiten</string>
     <string name="main_dialog_delete_profile_title">Profil löschen?</string>
-    <string name="main_dialog_delete_profile_message">Bist du sicher, dass du dein Profil mit dem Benutzer %1$s an der Schule %2$s löschen möchtest\?</string>
+    <string name="main_dialog_delete_profile_message">Bist du sicher, dass du dein Profil mit dem Benutzer %1$s an der Schule %2$s löschen möchtest?</string>
     <string name="main_dialog_update_profile_title">Profilaktualisierung notwendig</string>
     <string name="main_dialog_update_profile_message">Eine Aktualisierung der App hat den Benutzerdatenspeicher geändert. Bitte aktualisiere dein aktuelles Profil, um die App weiter nutzen zu können.</string>
     <string name="main_dialog_update_profile_button">Profil aktualisieren</string>
