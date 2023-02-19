@@ -395,4 +395,5 @@
     <string name="main_dialog_reports_title"></string>
     <string name="settings_recommend_title"></string>
     <string name="all_contact_email" translatable="false"></string>
+    <string name="infocenter_absences_filter"></string>
 </resources>
