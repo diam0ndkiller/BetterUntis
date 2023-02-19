@@ -396,4 +396,5 @@
     <string name="infocenter_absences_filter_only_unexcused"></string>
     <string name="main_dialog_reports_title"></string>
     <string name="settings_recommend_title"></string>
+    <string name="infocenter_absences_filter"></string>
 </resources>
