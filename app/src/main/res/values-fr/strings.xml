@@ -316,7 +316,7 @@
     <string name="infocenter_absence_unexcused">Non excusé</string>
     <string name="logindatainput_dialog_qrcodeinvalid_text">Le format du code QR scanné n\'est pas valide ou n\'est pas pris en charge par BetterUntis.</string>
     <string name="logindatainput_profilename">Nom du profil (facultatif)</string>
-    <string name="main_dialog_delete_bookmark">Souhaitez-vous supprimer ce favori \?</string>
+    <string name="main_dialog_delete_bookmark">Souhaitez-vous supprimer ce favori ?</string>
     <string name="preference_info_privacy_policy">Politique de confidentialité</string>
     <string name="roomfinder_error_details">Erreur : %1$s.</string>
     <string name="settings_recommend_hide">Ne plus montrer</string>
