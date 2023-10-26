@@ -130,7 +130,7 @@
     <string name="menu_infocenter_events">События</string>
     <string name="main_dialog_update_profile_button">Обновить профиль</string>
     <string name="logindatainput_delete">Удалить профиль</string>
-    <string name="main_dialog_delete_profile_title">Удалить профиль\?</string>
+    <string name="main_dialog_delete_profile_title">Удалить профиль?</string>
     <string name="infocenter_events_empty">Событий нет</string>
     <string name="logindatainput_anonymous_login">Анонимный вход</string>
     <string name="errors_crash_title">Похоже, что BetterUntis вылетело.</string>
@@ -139,8 +139,8 @@
     <string name="menu_infocenter_messagesofday">Сообщения</string>
     <string name="errormessagedictionary_invalid_school">Указанная школа не существует!</string>
     <string name="errors_button_dismiss">Отклонить все</string>
-    <string name="main_dialog_delete_bookmark">Вы точно хотите удалить эту закладку\?</string>
-    <string name="main_dialog_delete_profile_message">Вы точно хотите удалить свой профиль пользователя %1$s в школе %2$s\?</string>
+    <string name="main_dialog_delete_bookmark">Вы точно хотите удалить эту закладку?</string>
+    <string name="main_dialog_delete_profile_message">Вы точно хотите удалить свой профиль пользователя %1$s в школе %2$s?</string>
     <string name="mainactivitydrawer_profile_edit">Редактировать профили</string>
     <string name="main_time_diff_just_now">только что</string>
     <string name="preference_notifications_visibility_long">Длинное имя</string>
@@ -161,7 +161,7 @@
     <string name="preference_category_timetable_item_appearance">Отображение элементов</string>
     <string name="preference_notifications_enable_desc">Отображать уведомления с информацией о предстоящем уроке на переменах</string>
     <string name="preference_connectivity_refresh_in_background_desc">Отключите, чтобы сэкономить трафик при нечастых обновлениях расписания</string>
-    <string name="preference_dialog_colors_reset_title">Сбросить цвета\?</string>
+    <string name="preference_dialog_colors_reset_title">Сбросить цвета?</string>
     <string name="preference_dark_theme_auto">В соответствии с системой</string>
     <string name="preference_timetable_item_padding">Расстояние между элементами</string>
     <string name="preference_timetable_centered_lesson_info">Информация об уроке по центру</string>
