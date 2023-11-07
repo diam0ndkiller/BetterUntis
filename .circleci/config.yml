@@ -12,15 +12,12 @@ jobs:
   build:
     working_directory: ~/betteruntis
     executor:
-      name: android/android-machine
+      name: android/android-docker
       resource-class: large
       tag: 2023.10.1
     steps:
       - checkout
       - android/restore-gradle-cache
-      - run:
-          name: Download Dependencies
-          command: ./gradlew androidDependencies
       - run:
           name: Prepare signing config
           command: |
@@ -31,7 +28,7 @@ jobs:
             echo 'export KEY_RELEASE_PASSWORD=$(echo "$KEY_RELEASE_PASSWORD_ENCODED" | base64 --decode)' >> $BASH_ENV
       - run:
           name: Initial build
-          command: echo "yes" | ./gradlew --no-configuration-cache --no-daemon assemble bundle --scan
+          command: ./gradlew --no-configuration-cache --no-daemon assemble bundle --scan
           environment:
             GRADLE_OPTS: '
               -Dorg.gradle.daemon=false
