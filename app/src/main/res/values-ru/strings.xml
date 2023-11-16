@@ -252,4 +252,76 @@
     <string name="all_subjects">Предметы</string>
     <string name="infocenter_absences_filter_oldest_first">Старее</string>
     <string name="all_personal_abbr">Перс.</string>
+    <string name="preference_timetable_substitutions_irregular">Определять нерегулярные занятия</string>
+    <string name="settings_recommend_message">Нравится использовать BetterUnits? Расскажите о нём своим друзьям!</string>
+    <string name="roomfinder_no_rooms">Нет отображаемых кабинетов.
+\nКоснитесь +, чтобы добавить!</string>
+    <string name="preference_use_theme_background_desc">Применяется только к регулярным занятиям</string>
+    <string name="preference_week_snap_to_days_summary">вместо недель</string>
+    <string name="all_datepicker_select">Выберите дату</string>
+    <string name="all_datepicker_month_next">Следующий месяц</string>
+    <string name="preferences_info">О программе</string>
+    <string name="preference_school_background_desc">Некоторые школы устанавливают собственные цвета фона</string>
+    <string name="preferences_theme_color">Цвет темы</string>
+    <string name="roomfinder_image_next_hour">следующий час</string>
+    <string name="roomfinder_image_previous_hour">предыдущий час</string>
+    <string name="preference_week_custom_range_summary_short">%1$s</string>
+    <string name="widget_daily_messages">Дневные сообщения</string>
+    <string name="preferences_styling">Тема</string>
+    <string name="preferences_theme_color_system">Системный цвет темы</string>
+    <string name="preference_week_custom_range_summary">%1$s до %2$s</string>
+    <string name="settings_recommend_text">Попробуй BetterUnits - отличная альтернатива Units Mobile! Скачай с %1$s</string>
+    <string name="roomfinder_loading_data">Получение данных…</string>
+    <string name="all_datepicker_month_previous">Предыдущий месяц</string>
+    <string name="widget_timetable_link">Ссылка на расписание</string>
+    <string name="settings_dialog_url_open_text">BetterUnits не может найти приложение, в котором можно было бы открывать ссылки.
+\nПожалуйста, убедитесь, что у вас установлен веб-браузер, или откройте ссылку на другом устройстве:</string>
+    <string name="roomfinder_error">Ошибка при получении данных.</string>
+    <string name="preference_week_custom_range">Свой диапазон недели</string>
+    <string name="preference_marker">Индикатор времени</string>
+    <string name="preference_week_display_length">Отображаемые дни</string>
+    <string name="roomfinder_dialog_itemdelete_text">Вы точно хотите удалить этот кабинет из списка?</string>
+    <string name="preferences_general">Общее</string>
+    <string name="preference_timetable_substitutions_irregular_desc">Считать занятия с заменами нерегулярными</string>
+    <string name="preference_use_theme_background">Использовать цвета темы</string>
+    <plurals name="main_time_diff_minutes">
+        <item quantity="one">%d минуту назад</item>
+        <item quantity="few">%d минуты назад</item>
+        <item quantity="many">%d минут назад</item>
+        <item quantity="other">%d минут назад</item>
+    </plurals>
+    <string name="preferences_connectivity">Подключение</string>
+    <string name="widget_timetable">Расписание</string>
+    <string name="preferences_notifications">Уведомления</string>
+    <string name="preferences_timetable">Расписание</string>
+    <plurals name="main_time_diff_hours">
+        <item quantity="one">%d час назад</item>
+        <item quantity="few">%d часа назад</item>
+        <item quantity="many">%d часов назад</item>
+        <item quantity="other">%d часов назад</item>
+    </plurals>
+    <string name="roomfinder_image_availability_indicator">Индикатор доступности кабинета</string>
+    <string name="roomfinder_current_hour_time">%1$s - %2$s</string>
+    <string name="all_reload">Перезагрузка</string>
+    <string name="settings_recommend_share">Поделиться</string>
+    <string name="roomfinder_delete_item">Удалить</string>
+    <plurals name="roomfinder_item_desc">
+        <item quantity="one">Этот кабинет сейчас свободен.</item>
+        <item quantity="few">Этот кабинет будет свободен %d часа.</item>
+        <item quantity="many">Этот кабинет будет свободен %d часов.</item>
+        <item quantity="other">Этот кабинет будет свободен %d часов.</item>
+    </plurals>
+    <string name="widget_timetable_empty">Расписание на сегодня недоступно</string>
+    <string name="widget_select_profile">Пожалуйста, выберите профиль для виджета</string>
+    <plurals name="main_time_diff_days">
+        <item quantity="one">%d день назад</item>
+        <item quantity="few">%d дня назад</item>
+        <item quantity="many">%d дней назад</item>
+        <item quantity="other">%d дней назад</item>
+    </plurals>
+    <string name="preference_week_display_length_summary">Задайте 0 для использования длины недели</string>
+    <string name="roomfinder_error_details">Ошибка: %1$s.</string>
+    <string name="settings_recommend_hide">Не показывать снова</string>
+    <string name="roomfinder_dialog_itemdelete_title">Удалить %1$s</string>
+    <string name="settings_recommend_title">Порекомендовать BetterUnits</string>
 </resources>
