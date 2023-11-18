@@ -369,4 +369,39 @@
     <string name="infocenter_absences_list_schoolyear">Année scolaire en cours</string>
     <string name="infocenter_absences_filter">Filtrer les absences</string>
     <string name="all_contact_email" translatable="false"></string>
+    <string name="preference_category_app_language"></string>
+    <string name="library_kotlin_reflect" translatable="false"></string>
+    <string name="library_fuel_coroutines" translatable="false"></string>
+    <string name="library_materialcomponent_banner" translatable="false"></string>
+    <string name="all_end_time"></string>
+    <string name="library_colorpicker_compat" translatable="false"></string>
+    <string name="library_swiperefreshlayout" translatable="false"></string>
+    <string name="library_kotlinx_serialization_runtime" translatable="false"></string>
+    <string name="preference_info_license_desc" translatable="false"></string>
+    <string name="library_kotlin_test_junit" translatable="false"></string>
+    <string name="elementpicker_timetable_select"></string>
+    <string name="library_junit" translatable="false"></string>
+    <string name="library_constraintlayout" translatable="false"></string>
+    <string name="library_code_scanner" translatable="false"></string>
+    <string name="all_timepicker_select"></string>
+    <string name="all_open_datepicker"></string>
+    <string name="logindatainput_key_saved"></string>
+    <string name="library_appcompat" translatable="false"></string>
+    <string name="library_materialdaypicker" translatable="false"></string>
+    <string name="preference_reports_info"></string>
+    <string name="preference_category_reports"></string>
+    <string name="library_kotlin_stdlib" translatable="false"></string>
+    <string name="preference_app_language"></string>
+    <string name="all_start_time"></string>
+    <string name="library_weekview" translatable="false"></string>
+    <string name="library_fuel" translatable="false"></string>
+    <string name="app_name" translatable="false"></string>
+    <string name="library_joda_time" translatable="false"></string>
+    <string name="library_preference_ktx" translatable="false"></string>
+    <string name="library_kotlinx_coroutines_android" translatable="false"></string>
+    <string name="library_material" translatable="false"></string>
+    <string name="all_personal_abbr"></string>
+    <string name="library_mockito_core" translatable="false"></string>
+    <string name="library_recyclerview" translatable="false"></string>
+    <string name="main_dialog_reports_title"></string>
 </resources>
