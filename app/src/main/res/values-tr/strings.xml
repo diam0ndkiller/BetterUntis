@@ -277,4 +277,121 @@
         <item quantity="other">%d dakika önce</item>
     </plurals>
     <string name="preference_dark_theme_auto"></string>
+    <string name="mainactivitydrawer_profile_edit"></string>
+    <string name="main_dialog_reports_save"></string>
+    <string name="infocenter_absences_filter_sort"></string>
+    <string name="all_favourites"></string>
+    <string name="preference_category_app_language"></string>
+    <string name="library_kotlin_reflect" translatable="false"></string>
+    <string name="settings_recommend_message"></string>
+    <string name="preference_timetable_background_irregular"></string>
+    <string name="preference_week_snap_to_days"></string>
+    <string name="infocenter_absences_list_thirty_days"></string>
+    <string name="all_dialog_absences_save"></string>
+    <string name="all_open_link"></string>
+    <string name="preference_notifications_multiple_desc"></string>
+    <string name="infocenter_absences_list_schoolyear"></string>
+    <string name="all_exit"></string>
+    <string name="preference_week_snap_to_days_summary"></string>
+    <string name="all_datepicker_select"></string>
+    <string name="all_datepicker_month_next"></string>
+    <string name="preferences_info"></string>
+    <string name="infocenter_absence_unexcused"></string>
+    <string name="preference_notifications_first_lesson_time_unit"></string>
+    <string name="library_fuel_coroutines" translatable="false"></string>
+    <string name="preferences_theme_color"></string>
+    <string name="library_materialcomponent_banner" translatable="false"></string>
+    <string name="all_end_time"></string>
+    <string name="activity_title_messenger"></string>
+    <string name="library_colorpicker_compat" translatable="false"></string>
+    <string name="preference_reports_breadcrumbs_desc"></string>
+    <string name="preferences_theme_color_system"></string>
+    <string name="preference_week_custom_range_summary"></string>
+    <string name="settings_recommend_text"></string>
+    <string name="library_swiperefreshlayout" translatable="false"></string>
+    <string name="library_kotlinx_serialization_runtime" translatable="false"></string>
+    <string name="preference_automute_minimum_break_length_summary"></string>
+    <string name="all_datepicker_month_previous"></string>
+    <string name="settings_dialog_url_open_text"></string>
+    <string name="all_edit"></string>
+    <string name="preference_info_license_desc" translatable="false"></string>
+    <string name="preference_reports_info_desc"></string>
+    <string name="roomfinder_error"></string>
+    <string name="preference_range_from"></string>
+    <string name="infocenter_absence_excused"></string>
+    <string name="preference_week_custom_range"></string>
+    <string name="widget_disclaimer_text"></string>
+    <string name="preference_automute_minimum_break_length"></string>
+    <string name="all_lesson_info"></string>
+    <string name="library_kotlin_test_junit" translatable="false"></string>
+    <string name="infocenter_absences_list_ninety_days"></string>
+    <string name="elementpicker_timetable_select"></string>
+    <string name="infocenter_absences_list_fourteen_days"></string>
+    <string name="library_junit" translatable="false"></string>
+    <string name="library_constraintlayout" translatable="false"></string>
+    <string name="infocenter_absences_filter_time_ranges"></string>
+    <string name="infocenter_absences_list_seven_days"></string>
+    <string name="infocenter_absences_filter_newest_first"></string>
+    <string name="all_lessontopic_edit"></string>
+    <string name="library_code_scanner" translatable="false"></string>
+    <string name="all_timepicker_select"></string>
+    <string name="all_lesson_online"></string>
+    <string name="preference_info_privacy"></string>
+    <string name="preference_dialog_permission_alarms_title"></string>
+    <string name="preference_timetable_substitutions_irregular_desc"></string>
+    <string name="all_open_datepicker"></string>
+    <string name="logindatainput_key_saved"></string>
+    <string name="settings_dialog_url_open_title"></string>
+    <string name="login_demo"></string>
+    <string name="errors_crash_title"></string>
+    <string name="preference_info_privacy_desc"></string>
+    <string name="library_appcompat" translatable="false"></string>
+    <string name="logindatainput_dialog_qrcodeinvalid_title"></string>
+    <string name="all_back"></string>
+    <string name="logindatainput_dialog_qrcodeinvalid_text"></string>
+    <string name="library_materialdaypicker" translatable="false"></string>
+    <string name="main_dialog_reports_info_2"></string>
+    <string name="preference_reports_info"></string>
+    <string name="mainactivitydrawer_profile_edit_hint"></string>
+    <string name="maindrawer_bookmarks_add"></string>
+    <string name="preference_info_privacy_policy"></string>
+    <string name="preference_category_reports"></string>
+    <string name="preference_dialog_permission_alarms_text"></string>
+    <string name="all_reload"></string>
+    <string name="library_kotlin_stdlib" translatable="false"></string>
+    <string name="preference_category_timetable_range"></string>
+    <string name="preference_app_language"></string>
+    <string name="logindatainput_error_invalid_format"></string>
+    <string name="all_start_time"></string>
+    <string name="preference_info_license"></string>
+    <string name="preference_category_display_options"></string>
+    <string name="logindatainput_profilename"></string>
+    <string name="library_weekview" translatable="false"></string>
+    <string name="library_fuel" translatable="false"></string>
+    <string name="settings_recommend_share"></string>
+    <string name="preference_automute_mute_priority"></string>
+    <string name="errors_button_dismiss"></string>
+    <string name="all_exam"></string>
+    <string name="all_dialog_open_settings"></string>
+    <string name="preference_reports_breadcrumbs"></string>
+    <string name="preference_range_to"></string>
+    <string name="app_name" translatable="false"></string>
+    <string name="library_joda_time" translatable="false"></string>
+    <string name="library_preference_ktx" translatable="false"></string>
+    <string name="library_kotlinx_coroutines_android" translatable="false"></string>
+    <string name="infocenter_absences_filter_oldest_first"></string>
+    <string name="preference_week_display_length_summary"></string>
+    <string name="library_material" translatable="false"></string>
+    <string name="main_dialog_delete_bookmark"></string>
+    <string name="all_personal_abbr"></string>
+    <string name="library_mockito_core" translatable="false"></string>
+    <string name="roomfinder_error_details"></string>
+    <string name="library_recyclerview" translatable="false"></string>
+    <string name="settings_recommend_hide"></string>
+    <string name="main_dialog_reports_info_1"></string>
+    <string name="all_homework"></string>
+    <string name="widget_disclaimer_title"></string>
+    <string name="infocenter_absences_filter_only_unexcused"></string>
+    <string name="main_dialog_reports_title"></string>
+    <string name="settings_recommend_title"></string>
 </resources>
