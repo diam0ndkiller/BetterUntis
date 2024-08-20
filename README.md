@@ -2,6 +2,11 @@
 # BetterUntis
 An alternative mobile client for the Untis timetable system.
 
+diam0ndkiller's version: I try to add support for:
+- Marking cancelled lessons in widget
+- Custom colors in widget
+- Removing lessons (issue [#102](https://github.com/SapuSeven/BetterUntis/issues/102)) if the fix in branch 102 isn't already working
+
 <a href="https://circleci.com/gh/SapuSeven/BetterUntis"><img src="https://img.shields.io/circleci/build/gh/SapuSeven/BetterUntis?style=for-the-badge" alt="CircleCI"></a>
 <a href="https://hosted.weblate.org/engage/betteruntis/?utm_source=widget"><img src="https://img.shields.io/badge/dynamic/xml?color=green&label=localized&query=%2F%2F%2A%5Blocal-name%28%29%3D%27text%27%5D%5Blast%28%29%5D%2Ftext%28%29&url=https%3A%2F%2Fhosted.weblate.org%2Fwidgets%2Fbetteruntis%2F-%2Fsvg-badge.svg&style=for-the-badge" alt="Translation status" width=147.5 height=28/></a>
 <a href="https://matrix.to/#/#github-betteruntis:sapuseven.com"><img src="https://img.shields.io/badge/chat-on matrix-blueviolet?style=for-the-badge" alt="Matrix"></a>
