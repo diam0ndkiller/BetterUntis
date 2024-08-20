@@ -83,8 +83,8 @@ fun WidgetListView(
 
 	// Color for irregular lessons
 	val irregularTextColor = ColorProvider(
-		day = Color.Yellow,  // Change to your preferred color
-		night = Color.Yellow
+		day = Color(159, 127, 0),  // Change to your preferred color
+		night = Color(255, 255, 63)
 	)
 
 	val irregularBackgroundColor = ColorProvider(
@@ -94,8 +94,8 @@ fun WidgetListView(
 
 	// Color for canceled lessons
 	val canceledTextColor = ColorProvider(
-		day = Color.Red,  // Change to your preferred color
-		night = Color.Red
+		day = Color(223, 0, 0),  // Change to your preferred color
+		night = Color(255, 31, 31)
 	)
 
 	val canceledBackgroundColor = ColorProvider(
