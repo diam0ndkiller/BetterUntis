@@ -4,6 +4,7 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.glance.GlanceModifier
 import androidx.glance.action.Action
@@ -59,7 +60,7 @@ fun WidgetListView(
 	items: List<WidgetListItemModel>,
 	onClickAction: Action,
 ) {
-	val surface = ColorProvider(
+	/*val surface = ColorProvider(
 		day = dayColorScheme.surface,
 		night = nightColorScheme.surface,
 	)
@@ -67,12 +68,52 @@ fun WidgetListView(
 	val onSurface = ColorProvider(
 		day = dayColorScheme.onSurface,
 		night = nightColorScheme.onSurface,
+	)*/
+
+	// Color for regular lessons
+	val regularTextColor = ColorProvider(
+		day = dayColorScheme.onSurface,
+		night = nightColorScheme.onSurface,
+	)
+
+	val regularBackgroundColor = ColorProvider(
+		day = dayColorScheme.surface,
+		night = nightColorScheme.surface,
+	)
+
+	// Color for irregular lessons
+	val irregularTextColor = ColorProvider(
+		day = Color.Yellow,  // Change to your preferred color
+		night = Color.Yellow
+	)
+
+	val irregularBackgroundColor = ColorProvider(
+		day = dayColorScheme.surface,
+		night = nightColorScheme.surface,
+	)
+
+	// Color for canceled lessons
+	val canceledTextColor = ColorProvider(
+		day = Color.Red,  // Change to your preferred color
+		night = Color.Red
+	)
+
+	val canceledBackgroundColor = ColorProvider(
+		day = dayColorScheme.surface,
+		night = nightColorScheme.surface,
 	)
 
 	LazyColumn(
 		modifier = modifier
 	) {
-		items(items) {
+		//items(items) {
+		items(items) { it ->
+			// Determine text and background colors based on item status
+			val (textColor, backgroundColor) = when (it.status) {
+				"irregular" -> Pair(irregularTextColor, irregularBackgroundColor)
+				"canceled" -> Pair(canceledTextColor, canceledBackgroundColor)
+				else -> Pair(regularTextColor, regularBackgroundColor)
+			}
 			WidgetListItem(
 				// TODO: The current version (alpha05) has a bug which prevents click events from children to be registered; see https://issuetracker.google.com/issues/242397933
 				// TODO: Use actionStartActivity on timetable item click, otherwise show reload action
@@ -80,8 +121,8 @@ fun WidgetListView(
 				leadingContent = it.leadingContent,
 				headlineContent = it.headlineContent,
 				supportingContent = it.supportingContent,
-				surfaceColor = surface,
-				textColor = onSurface
+				surfaceColor = backgroundColor,
+				textColor = textColor
 			)
 		}
 	}
@@ -139,5 +180,6 @@ private fun WidgetListItem(
 data class WidgetListItemModel(
 	val headlineContent: String,
 	val supportingContent: String,
-	val leadingContent: @Composable ((surfaceColor: ColorProvider, textColor: ColorProvider) -> Unit)?
+	val leadingContent: @Composable ((surfaceColor: ColorProvider, textColor: ColorProvider) -> Unit)?,
+	val status: String = "regular"
 )

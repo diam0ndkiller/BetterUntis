@@ -80,6 +80,11 @@ class WidgetUpdateWorker(context: Context, params: WorkerParameters) :
 									timetableItems.getOrNull(index + 1)?.startDateTime == item.startDateTime
 
 								WidgetListItemModel(
+									status = when {
+										item.periodData.isCancelled() -> "canceled"
+										item.periodData.isIrregular() -> "irregular"
+										else -> "regular"
+								    },
 									headlineContent = item.periodData.getLong(
 										TimetableDatabaseInterface.Type.SUBJECT
 									),

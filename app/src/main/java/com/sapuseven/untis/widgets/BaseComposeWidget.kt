@@ -63,6 +63,7 @@ open class BaseComposeWidget : GlanceAppWidget() {
 
 		val themeColor = runBlocking { Color(themeColorPref.getValue()) }
 
+
 		content(
 			generateColorScheme(
 				context = context,
