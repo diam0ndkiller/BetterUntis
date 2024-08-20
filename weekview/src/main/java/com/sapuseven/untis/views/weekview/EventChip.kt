@@ -74,9 +74,24 @@ internal constructor(var event: WeekViewEvent<T>, var originalEvent: WeekViewEve
 		val bottomPaint = config.drawConfig.eventBottomPaint.apply { color = textColor }
 		val indicatorRadius = topPaint.textSize / 4f
 
-		val eventTop = restoreSpanned(event.top, TextUtils.ellipsize(event.top, topPaint, availableWidth.toFloat(), TextUtils.TruncateAt.END))
-		val eventTitle = restoreSpanned(event.title, TextUtils.ellipsize(event.title, titlePaint, availableWidth.toFloat(), TextUtils.TruncateAt.END))
-		val eventBottom = restoreSpanned(event.bottom, TextUtils.ellipsize(event.bottom, bottomPaint, availableWidth.toFloat(), TextUtils.TruncateAt.END))
+		// Function to truncate text to fit within a specified width without adding ellipsis
+		fun truncateTextToFitWidth(text: CharSequence, paint: Paint, availableWidth: Float): CharSequence {
+			// Start with the full text
+			var truncatedText = text
+
+			// While the text is too wide to fit within the available width and there are characters left to remove
+			while (paint.measureText(truncatedText.toString()) > availableWidth && truncatedText.isNotEmpty()) {
+				// Remove the last character
+				truncatedText = truncatedText.dropLast(1)
+			}
+
+			// Return the truncated text that fits within the width
+			return truncatedText
+		}
+
+		val eventTop = restoreSpanned(event.top, truncateTextToFitWidth(event.top, topPaint, availableWidth.toFloat()))//TextUtils.ellipsize(event.top, topPaint, availableWidth.toFloat(), TextUtils.TruncateAt.END))
+		val eventTitle = restoreSpanned(event.title, truncateTextToFitWidth(event.title, titlePaint, availableWidth.toFloat()))//, TextUtils.ellipsize(event.title, titlePaint, availableWidth.toFloat(), TextUtils.TruncateAt.END))
+		val eventBottom = restoreSpanned(event.bottom, truncateTextToFitWidth(event.bottom, bottomPaint, availableWidth.toFloat()))//, TextUtils.ellipsize(event.bottom, bottomPaint, availableWidth.toFloat(), TextUtils.TruncateAt.END))
 
 		canvas.save()
 		canvas.translate(rect!!.left + config.eventPadding, rect!!.top + config.eventPadding)
