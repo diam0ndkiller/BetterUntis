@@ -18,6 +18,7 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
 import com.sapuseven.untis.data.databases.UserDatabase
+import com.sapuseven.untis.helpers.config.preferenceDataStore
 import com.sapuseven.untis.helpers.timetable.TimetableDatabaseInterface
 import com.sapuseven.untis.ui.widgets.WidgetListItemModel
 import com.sapuseven.untis.widgets.BaseComposeWidget.Companion.PREFERENCE_KEY_INT_ELEMENT_ID
@@ -25,6 +26,10 @@ import com.sapuseven.untis.widgets.BaseComposeWidget.Companion.PREFERENCE_KEY_LO
 import com.sapuseven.untis.widgets.BaseComposeWidget.Companion.PREFERENCE_KEY_STRING_ELEMENT_TYPE
 import com.sapuseven.untis.widgets.TimetableWidget
 import com.sapuseven.untis.widgets.toGlanceTextStyle
+import kotlinx.coroutines.flow.first
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 import org.joda.time.format.DateTimeFormat
 
 /**
@@ -72,6 +77,20 @@ class WidgetUpdateWorker(context: Context, params: WorkerParameters) :
 						val timetableItems =
 							timetable.items.sortedBy { it.startDateTime.toString() }
 
+						@Serializable
+						data class JSONSubject(
+							val type: String,
+							val id: Int,
+							val orgId: Int
+						)
+
+						fun parseJSON(jsonString: String): List<JSONSubject> {
+							return Json.decodeFromString(jsonString)
+						}
+
+						val timetableHiddenElementsJSON = applicationContext.preferenceDataStore.data.first()[stringPreferencesKey("1_timetable_hidden_elements")]
+						val timetableHiddenElements = parseJSON(timetableHiddenElementsJSON.toString())
+
 						val timetableListItems = timetableItems
 							.mapIndexed { index, item ->
 								val sameTimeAsPrevious =
@@ -79,12 +98,18 @@ class WidgetUpdateWorker(context: Context, params: WorkerParameters) :
 								val sameTimeAsNext =
 									timetableItems.getOrNull(index + 1)?.startDateTime == item.startDateTime
 
+								var isHidden = false
+								timetableHiddenElements.forEach {
+									if (it.id == item.periodData.subjects.toList()[0].id) isHidden = true
+								}
+
 								WidgetListItemModel(
 									status = when {
 										item.periodData.isCancelled() -> "canceled"
 										item.periodData.isIrregular() -> "irregular"
 										else -> "regular"
 								    },
+									isHidden = isHidden,
 									headlineContent = item.periodData.getLong(
 										TimetableDatabaseInterface.Type.SUBJECT
 									),

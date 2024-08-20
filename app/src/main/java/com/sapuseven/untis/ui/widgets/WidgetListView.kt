@@ -114,16 +114,19 @@ fun WidgetListView(
 				"canceled" -> Pair(canceledTextColor, canceledBackgroundColor)
 				else -> Pair(regularTextColor, regularBackgroundColor)
 			}
-			WidgetListItem(
-				// TODO: The current version (alpha05) has a bug which prevents click events from children to be registered; see https://issuetracker.google.com/issues/242397933
-				// TODO: Use actionStartActivity on timetable item click, otherwise show reload action
-				modifier = GlanceModifier.clickable(onClickAction),
-				leadingContent = it.leadingContent,
-				headlineContent = it.headlineContent,
-				supportingContent = it.supportingContent,
-				surfaceColor = backgroundColor,
-				textColor = textColor
-			)
+
+			if (!it.isHidden) {
+				WidgetListItem(
+					// TODO: The current version (alpha05) has a bug which prevents click events from children to be registered; see https://issuetracker.google.com/issues/242397933
+					// TODO: Use actionStartActivity on timetable item click, otherwise show reload action
+					modifier = GlanceModifier.clickable(onClickAction),
+					leadingContent = it.leadingContent,
+					headlineContent = it.headlineContent,
+					supportingContent = it.supportingContent,
+					surfaceColor = backgroundColor,
+					textColor = textColor
+				)
+			}
 		}
 	}
 }
@@ -181,5 +184,6 @@ data class WidgetListItemModel(
 	val headlineContent: String,
 	val supportingContent: String,
 	val leadingContent: @Composable ((surfaceColor: ColorProvider, textColor: ColorProvider) -> Unit)?,
-	val status: String = "regular"
+	val status: String = "regular",
+	val isHidden: Boolean = false,
 )
