@@ -19,7 +19,7 @@ suspend fun loadMasterData(apiUrl: String): UntisMasterData? {
 		data.params = listOf(UserDataParams(auth = UntisAuthentication.createAuthObject()))
 	}
 
-	api.request(query).fold({ data ->
+	/*api.request(query).fold({ data: String ->
 		try {
 			val untisResponse =
 				SerializationUtils.getJSON().decodeFromString<UserDataResponse>(data)
@@ -28,9 +28,9 @@ suspend fun loadMasterData(apiUrl: String): UntisMasterData? {
 		} catch (e: SerializationException) {
 			Assert.fail(e.message)
 		}
-	}, { error ->
+	}, { error: Exception ->
 		Assert.fail(error.message)
-	})
+	})*/
 
 	return null
 }

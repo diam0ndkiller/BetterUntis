@@ -10,7 +10,7 @@ import com.sapuseven.untis.activities.BaseComposeActivity
 import com.sapuseven.untis.activities.RoomFinder
 import com.sapuseven.untis.activities.RoomFinderState
 import com.sapuseven.untis.data.databases.RoomFinderDatabase
-import com.sapuseven.untis.data.databases.LegacyUserDatabase
+import com.sapuseven.untis.data.databases.UserDatabase
 import com.sapuseven.untis.helpers.timetable.TimetableDatabaseInterface
 import com.sapuseven.untis.mocks.MOCK_USER_ID
 import com.sapuseven.untis.mocks.timeGrid
@@ -35,7 +35,7 @@ class RoomFinderActivityScreenshot {
 
 	@Before
 	fun setupUserDatabase() {
-		LegacyUserDatabase.createInstance(rule.activity).setAdditionalUserData(
+		UserDatabase.getInstance(rule.activity).userDao().insertUserData(
 			MOCK_USER_ID, UntisMasterData(
 				absenceReasons = emptyList(),
 				departments = emptyList(),
@@ -46,11 +46,11 @@ class RoomFinderActivityScreenshot {
 				holidays = emptyList(),
 				klassen = emptyList(),
 				rooms = listOf(
-					Room(1, "A001", "A001"),
-					Room(2, "A002", "A002"),
-					Room(3, "A003", "A003"),
-					Room(4, "A004", "A004"),
-					Room(5, "A005", "A005"),
+					Room(1, 1, "A001"),
+					Room(2, 2, "A002"),
+					Room(3, 3, "A003"),
+					Room(4, 4, "A004"),
+					Room(5, 5, "A005"),
 				),
 				subjects = emptyList(),
 				teachers = emptyList(),
@@ -71,7 +71,7 @@ class RoomFinderActivityScreenshot {
 					RoomFinder(RoomFinderState(
 						user = rule.activity.user!!,
 						timetableDatabaseInterface = TimetableDatabaseInterface(
-							database = LegacyUserDatabase.createInstance(rule.activity),
+							userDatabase = UserDatabase.getInstance(rule.activity),
 							id = MOCK_USER_ID
 						),
 						preferences = preferenceWithTheme(rule.activity.dataStorePreferences),
@@ -89,7 +89,7 @@ class RoomFinderActivityScreenshot {
 
 	@After
 	fun cleanupUserDatabase() {
-		LegacyUserDatabase.createInstance(rule.activity).deleteUser(MOCK_USER_ID)
+		UserDatabase.getInstance(rule.activity).userDao().deleteUserData(MOCK_USER_ID)
 	}
 }
 
