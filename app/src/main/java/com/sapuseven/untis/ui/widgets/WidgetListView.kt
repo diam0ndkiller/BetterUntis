@@ -1,4 +1,4 @@
-package com.sapuseven.untis.ui.widgets
+/*package com.sapuseven.untis.ui.widgets
 
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
@@ -10,9 +10,14 @@ import androidx.glance.action.Action
 import androidx.glance.action.clickable
 import androidx.glance.appwidget.lazy.LazyColumn
 import androidx.glance.appwidget.lazy.items
-import androidx.glance.appwidget.unit.ColorProvider
 import androidx.glance.background
-import androidx.glance.layout.*
+import androidx.glance.color.ColorProvider
+import androidx.glance.layout.Alignment
+import androidx.glance.layout.Box
+import androidx.glance.layout.Column
+import androidx.glance.layout.Row
+import androidx.glance.layout.fillMaxWidth
+import androidx.glance.layout.padding
 import androidx.glance.text.Text
 import androidx.glance.unit.ColorProvider
 import com.sapuseven.untis.widgets.toGlanceTextStyle
@@ -141,3 +146,4 @@ data class WidgetListItemModel(
 	val supportingContent: String,
 	val leadingContent: @Composable ((surfaceColor: ColorProvider, textColor: ColorProvider) -> Unit)?
 )
+*/
